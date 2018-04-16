@@ -41,11 +41,10 @@
 				<br />
 				<em><a href="commentaires.php?billet=<?php echo $donnees['id']; ?>">Commentaires billet N° <?php echo $donnees['id']; ?></a></em>
 			</p>
-		</p>
-	</div>
-	<?php
-}
+		</div>
+		<?php
+} // Fin de la boucle des billets
+$req->closeCursor();
 ?>
-
 </body>
 </html>
