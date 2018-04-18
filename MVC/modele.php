@@ -15,3 +15,4 @@ function getBillets()
 	return $req;
 }
 ?>
+<!--Création de la fonction qui renvoie la liste des billets-->
