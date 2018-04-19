@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Mon super blog</title>
+	<title>Mon super blog en MVC</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 
