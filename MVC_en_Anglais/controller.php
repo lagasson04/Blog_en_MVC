@@ -6,7 +6,7 @@ function listPosts()
 {
 	$posts = getPosts();
 
-	require('listPostsView.php')
+	require('listPostsView.php');
 }
 
 function post()
