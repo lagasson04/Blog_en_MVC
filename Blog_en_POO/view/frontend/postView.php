@@ -17,15 +17,13 @@
 
 <h2>Commentaires</h2>
 
-<?php
-while ($comment = $comments->fetch())
-{
-	?>
+<?php foreach ($comments as $comment): ?>
+
 	<p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['comment_date_fr'] ?></p>
 	<p><?= nl2br(htmlspecialchars($comment['comment'])) ?></p>
-	<?php
-}
-?>
+	
+<?php endforeach; ?>
+
 <?php $content = ob_get_clean(); ?>
 
 <?php require('template.php'); ?>
