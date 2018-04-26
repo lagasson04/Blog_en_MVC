@@ -23,4 +23,13 @@ class CommentManager extends Manager
 
         return $affectedLines;
     }
+
+    public function updateComment($author, $comment)
+    {
+    	$db = $this->dbConnect();
+    	$updateCom = $db->prepare('UPDATE comments SET comment = ? WHERE comment = ?');
+    	$update = $updateCom->execute(array($newComment, $oldComment));
+
+    	return $update;
+    }
 }
