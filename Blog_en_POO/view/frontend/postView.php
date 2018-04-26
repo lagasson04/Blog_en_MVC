@@ -19,7 +19,7 @@
 
 <?php foreach ($comments as $comment): ?>
 
-	<p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['comment_date_fr'] ?></p>
+	<p><strong><?= htmlspecialchars($comment['author']) ?></strong> le <?= $comment['comment_date_fr'] ?><a href="view/frontend/updateCommentView.php?auteur=<?= $comment['author'] ?>&amp;com=<?= $comment['comment'] ?>"> (modifier)</a></p>
 	<p><?= nl2br(htmlspecialchars($comment['comment'])) ?></p>
 	
 <?php endforeach; ?>
@@ -28,7 +28,7 @@
 
 <?php require('template.php'); ?>
 
-<h2>Commentaires</h2>
+<h2>Ajout de commentaires : </h2>
 
 <form action="index.php?action=addComment&amp;id=<?=$post['id'] ?>" method="post">
 	<div>
