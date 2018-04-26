@@ -10,7 +10,7 @@
 	<form action="#" method="post">
 		<div>
 			<label for="author">Auteur</label><br />
-			<input type="text" id="author" name="author" value="<?= htmlspecialchars($_GET['auteur']) ?>" required="required"/>
+			<input type="text" id="author" name="author" value="<?= htmlspecialchars($_GET['auteur']) ?>" disabled="disabled" />
 		</div>
 		<div>
 			<label for="comment">Commentaire</label><br />
